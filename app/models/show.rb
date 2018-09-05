@@ -25,7 +25,7 @@ def self.ratings_sum
 end
 
 def self.popular_shows
-  Show.order(rating: > 5)
+  Show.order(:rating > 5)
 end
 
 
