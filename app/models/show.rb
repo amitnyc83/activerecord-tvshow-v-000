@@ -8,6 +8,10 @@ def self.most_popular_show
  Show.order(rating: :DESC).first
 end
 
+def self.most_popular_show
+  Show.order(Rating: :DESC).first
+end
+
 
 
 end
